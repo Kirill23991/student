@@ -35,6 +35,14 @@ class Student {
     {
         return $this->gender;
     }
+    public function getGroup() : string
+    {
+        return $this->group;
+    }
+    public function getYearOfAdmission() : string
+    {
+        return $this->year_of_admission;
+    }
     public function changeFirstName(string $newFitstName) : void
     {
         $this->firstName = $newFitstName;
