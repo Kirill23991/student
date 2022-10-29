@@ -10,7 +10,10 @@ class Student {
         private string $firstName,
         private string $lastName,
         private DateTime $birthDate,
-        private string $gender
+        private string $gender,
+        private string $initials,
+        private string $group,
+        private string $year_of_admission
     ) {}
     public function getFirstName() : string
     {
@@ -64,8 +67,8 @@ class Student {
     }
 }
 
-$user1 = new user (firstname: 'Кирилл', secondName: 'Новиков', LastName: 'Юрьевич', birthdayDate: '23.12.2001');
-$user2 = new user (firstname: 'Даниил', secondName: 'Матюшин', LastName: 'Михайлович', birthdayDate: '04.10.2002');
-$user3 = new user (firstname: 'Тимерлан', secondName: 'Бейсенов', LastName: 'Нургалович', birthdayDate: '8.11.2001');
-$user4 = new user (firstname: 'Антон', secondName: 'Трофимов', LastName: 'Петрович', birthdayDate: '12.4.2006');
+$user1 = new user (firstname: 'Кирилл', secondName: 'Новиков', LastName: 'Юрьевич', birthdayDate: '23.12.2001', gender: 'Мужчина', group: "ISP 20-21", year of admission: "2020");
+$user2 = new user (firstname: 'Даниил', secondName: 'Матюшин', LastName: 'Михайлович', birthdayDate: '04.10.2002', gender: 'Мужчина', group: "ISP 20-21", year of admission: "2020");
+$user3 = new user (firstname: 'Тимерлан', secondName: 'Бейсенов', LastName: 'Нургалович', birthdayDate: '8.11.2001', gender: 'Мужчина', group: "DC 23-21", year of admission: "2021");
+$user4 = new user (firstname: 'Антон', secondName: 'Трофимов', LastName: 'Петрович', birthdayDate: '12.4.2006', gender: 'Мужчина', group: "ISP 19-20", year of admission: "2023");
 ?>
